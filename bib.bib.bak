@@ -60,8 +60,9 @@
 
 @ELECTRONIC{viscositypicture,
   author = {Thermopedia},
-  note = {Accessed 14-11-2014, \href{http://www.thermopedia.com/content/986/?tid=110\&sn=18}{Fluid
-	Fundamentals: Non-Newtonian Fluids}},
+  title = {Fluid Fundamentals: Non-Newtonian Fluids},
+  note = {Accessed 14-11-2014, \href{http://www.thermopedia.com/content/986/?tid=110\&sn=18}{URL:
+	http://www.thermopedia.com\-/content/986\-/?tid=110\&\-sn=18}},
   owner = {Ruben},
   timestamp = {2014.11.14}
 }

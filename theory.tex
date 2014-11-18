@@ -20,11 +20,11 @@ The red blood cells (RBCs) are in the blood to transport the oxygen and carbon d
 \caption{Front and side view of red blood cells in a rouleaux}
 \label{RBCs}
 \end{figure}
-The effect of the properties of blood (i.e. containing red blood cells and other components) on the flow of blood will be discussed in this paper. In \autoref{viscositysection} will be discussed what the effects are on the fluid properties of blood, while in MODELS FOR it will be discussed how the fluid flow can be simulated. These simulations will lead to the comparison of different viscosity models for blood rheology and how those affect flow and wall shear stress in arteries. 
+The effect of the properties of blood (i.e. containing red blood cells and other components) on the flow of blood will be discussed in this paper. In \autoref{viscositysection} it will be discussed what the effects are on the fluid properties of blood, while in MODELS FOR it will be discussed how the fluid flow can be simulated. These simulations will lead to the comparison of different viscosity models for blood rheology and how those affect flow and wall shear stress in arteries. 
 \subsection{Viscosity}
 \label{viscositysection}
 \subsubsection{Viscosity in general}
-Laminar flow can be described as a flow that is neatly ``layered'', meaning that there are infinitesimal small layers in the flow direction which have the same speed. These layers move at different speeds from each other but have a contact surface, and through this speed difference there is a friction. This friction force per surface area is called shear stress and is denoted as $\tau_{yx}$, which means that the shear stress is acting in the x direction on a surface normal to the y plane. 
+Laminar flow can be described as a flow that is neatly ``layered'', meaning that there are infinitesimal small layers in the flow direction which, within the layer, have the same speed. These layers move at different speeds from each other but have a contact surface, and through this speed difference there is a friction. This friction force per surface area is called shear stress and is denoted as $\tau_{yx}$, which means that the shear stress is acting in the x direction on a surface normal to the y plane. 
 
 A measure of the deformation of the fluid caused by this shear stress can be described by the strain rate (the amount of strain per second), which can be written as (in a 1 dimensional flow in the $x-$direction)
 \begin{equation}
@@ -38,16 +38,16 @@ where $\mu$ is the viscosity. This equation is negative because a bigger velocit
 
 In Newtonian fluids, the viscosity is a material property dependent on temperature and pressure for different fluid systems. A high viscosity means that there is a lot of resistance to a velocity gradient and makes a very thick fluid, while a low viscosity makes a very fluent fluid.
 
-In Newtonian fluids, the relatively small and round particles are only impeded in movement by each other. This is why most fluids are not Newtonian! Blood is not Newtonian because blood is not a uniform fluid (see \autoref{bloodtheory}).
+In Newtonian fluids, the relatively small and round particles are only impeded in movement by each other. This is why most fluids are not Newtonian! Blood is not Newtonian because blood it contains rouleaux and proteins (see \autoref{bloodtheory}).
 \subsubsection{Non-Newtonian viscosity}
-When the fluid's viscosity is not only dependent on the temperature and the density but also on the shear rate, that fluid is called non-Newtonian. Most fluids start at a zero shear rate `first Newtonian' value for the viscosity called $\mu_{0}$ to a `second-Newtonian'value $\mu_{2}$ at very high shear rates \cite{nonnewtsimulation}. When this is the case, the fluid is said to be shear-thinning, or pseudoplastic. The opposite can happen as well, when the apparant viscosity (the viscosity at a certain shear stress) starts lower and ends higher. Lastly there's Bingham plastics, who only start flowing when there is a certain shear stress applied. A well-known example of this is toothpaste \cite{FT}. In \autoref{viscosityplaatje} there is an overview of different types of fluid and their viscosity behavior plotted against shear stress.
+When the fluid's viscosity is not only dependent on the temperature and the density but also on the shear rate, that fluid is called non-Newtonian. Most fluids start at a zero shear rate `first Newtonian' value for the viscosity called $\mu_{0}$ to a `second-Newtonian'value $\mu_{2}$ at very high shear rates \cite{nonnewtsimulation}. When this is the case, the fluid is said to be shear-thinning, or pseudoplastic. The opposite can happen as well, when the apparant viscosity (the viscosity at a certain shear stress) starts lower and ends higher, which is known as shear-thickening or dilatant. Lastly there's Bingham plastics, who only start flowing when there is a certain shear stress applied. A well-known example of this is toothpaste \cite{FT}. In \autoref{viscosityplaatje} there is an overview of different types of fluid and their viscosity behavior plotted against shear stress.
 \begin{figure}[hb]
 \centering
 \includegraphics{viscosityshearstress.png}
 \caption{The viscosity of a fluid plotted against the shear stress \cite{viscositypicture}}
 \label{viscosityplaatje}
 \end{figure}
-Blood has been tested to be a shear-thinning fluid \cite{bloodthinning}. 
+Blood has been tested to be a shear-thinning fluid \cite{bloodthinning}. In VOLGEND PLAATJE it is shown how the viscosity of blood is dependent on the shear stress and the hematocrit level. 
  
 The viscosity of blood has been generally accepted as temperature \emph{independent} because it has very little effect on the viscosity nor on the yield stress\cite{rheologyofblood}.
 
